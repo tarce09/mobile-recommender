@@ -1,0 +1,268 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Phonedekho</title>
+
+  <!-- Link to use font awesome -->
+  <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" data-auto-a11y="true"></script>
+
+  <!-- Link to Embedde Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Css stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'style/style.css' %}">
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+  </script>
+  <!-- ------------------- -->
+
+
+</head>
+
+<body>
+
+  <section id="title">
+
+    <!-- Nav Bar -->
+    <div class="container-fluid top-container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand mb-0 h1" href="">Phonedekho</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+            
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+
+      <div class="row">
+        <div class="col-lg-6 text-container">
+          <h1 class="title-text">Looking for a smarphone?</h1>
+          <p class="body-text">Choose your smarphone based on your use.</p>
+        </div>
+        <div class="col-lg-6">
+          <img class="phone-img" src="{% static 'images/Phone_svg.svg' %}" alt="iphone-mockup">
+        </div>
+      </div>
+
+
+    </div>
+  </section>
+
+  <!-- Phone -->
+
+  <section id="products">
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-lg-3 ">
+
+          <!-- Category-container -->
+          <div class="categories-container">
+            <h3 class="pref-text">Preferance</h3>
+            <ul class="categ-list">
+              <form action="choose">
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="all" name="categories">
+                <label class="item form-check-label" for="defaultCheck1">
+                  All
+                </label>
+              </div>
+            
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="ios" name="categories">
+                <label class="item form-check-label" for="defaultCheck1">
+                  IOS
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="display" name="categories">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Display
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="cameraphone" name="categories">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Camera phone
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="gamingphone" name="categories">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Gaming phone
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="batterylife" name="categories">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Battery Life
+                </label>
+              </div>
+              
+
+            </ul>
+          </div>
+
+          <!-- Price Range-container -->
+          <div class="price-container">
+            <h3 class="pref-text">Price</h3>
+            <ul class="categ-list">
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="0" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Below Rs.10,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="1" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Rs.10,000 - Rs.20,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="2" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Rs.20,000 - Rs.30,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="3" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Rs.30,000 - Rs.40,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="4" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Rs.40,000 - Rs.50,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="5" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Rs.50,000 - Rs.65,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" o type="radio" value="6" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Rs.65,000 - Rs.80,000
+                </label>
+              </div>
+
+              <div class="p-t-4 form-check">
+                <input class="form-check-input" type="radio" value="7" name="pricemintomax" onchange="this.form.submit()">
+                <label class="item form-check-label" for="defaultCheck1">
+                  Above 80,000
+                </label>
+              </div>
+              
+
+            </ul>
+
+          </div>
+          {% comment %} <input class="btn btn-outline-dark" type='submit'> {% endcomment %}
+            </form>
+        </div>
+        
+        <div class="col-lg-9">
+          <div id="product_scroll">
+            <div class="row">
+              
+              {% for i in result %}
+              
+                <div class="col-md-4" style = "height: 300px;width: 280px;text-align: center;margin-bottom: 5%;">
+                <div class="image">
+                  <img style = "height:220px;position: relative;top: 2px;"
+                  src="{{i.img1}}"
+                  alt="phone-image">
+                </div>
+
+                <div style = "position: relative;top: 15%;">
+                  <form action="shop" class="productprice">
+                    <input type="hidden" name="namee" value="{{i.name}}">
+                    <input type="hidden" name="pricee" value="{{i.price}}">
+                    <input type="hidden" name="disc" value="{{i.disc}}">
+                    <input type="hidden" name="image" value="{{i.image}}">
+                    <input type="hidden" name="disc1" value="{{i.disc1}}">
+                    <input type="hidden" name="disc2" value="{{i.disc2}}">
+                    <input type="hidden" name="disc3" value="{{i.disc3}}">
+                    <input type="hidden" name="disc4" value="{{i.disc4}}">
+                    <input type="hidden" name="disc5" value="{{i.disc5}}">
+                    <input type="hidden" name="disc6" value="{{i.disc6}}">
+                    <input type="hidden" name="link" value="{{i.link}}">
+                    <input type="hidden" name="about" value="{{i.about}}">
+                    <input type="hidden" name="img1" value="{{i.img1}}">
+                    <input type="hidden" name="img2" value="{{i.img2}}">
+                    <input type="hidden" name="img3" value="{{i.img3}}">
+                    <input type="hidden" name="img4" value="{{i.img4}}">
+                    <input type="hidden" name="img5" value="{{i.img5}}">
+  
+                    <input type="submit" value="{{i.name}}" style = "width:250px;border:none;background:none;cursor: pointer;outline: none;">
+                    <br>
+                    <input type="submit" value="{{i.price}}" style = "width:250px;border:none;background:none;cursor: pointer;outline: none;">
+                  </form>
+                </div>
+              </div>
+            {% endfor %}
+             
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+    <p class="footer_txt">© Copyright 2020 Phonedekho</p>
+  </footer>
+
+</body>
+</html>

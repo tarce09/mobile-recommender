@@ -1,0 +1,163 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+/* NAV BAR */
+.navbar {
+    padding-bottom: 1%;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 900;
+
+}
+
+.nav-item {
+    font-size: 1rem;
+    margin: 0 20%;
+}
+
+.navbar-nav {
+    margin-right: 10%;
+}
+
+
+
+/* TOP CONTAINER */
+
+.container-fluid {
+
+    padding: 1% 5% 0;
+    margin-bottom: 2%;
+}
+
+/* .product_scroll {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 600px;
+} */
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+
+/* Shop */
+
+#product {
+    margin-bottom: 5%;
+}
+
+.shop_product {
+    text-align: left;
+}
+
+.product_tittle {
+    margin-bottom: 10%;
+}
+
+.product_h1 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin-bottom: 3%;
+    padding-right: 10%;
+}
+
+.product_rating {
+
+    font-size: 1rem;
+    margin-bottom: 10%;
+}
+
+.price {
+    margin-bottom: 5%;
+}
+
+.d-block {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_disc {
+
+    text-align: justify;
+    padding-right: 40%;
+    margin-bottom: 10%;
+}
+
+.shop_button {
+    text-decoration: none;
+    background-color: #5cceff;
+    border-radius: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 5px 40px;
+    text-decoration: none;
+}
+
+.shop_button:hover {
+    text-decoration: none;
+    background-color: #54bfec;
+    color: white;
+}
+
+.shop_button:active {
+
+    position: relative;
+    top: 1px;
+}
+
+.highlights {
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.about-phone{
+    text-align: justify;
+    padding-right: 50%;
+    margin-bottom: 5%;
+}
+
+.disc {
+    margin-bottom: 2%;
+}
+
+.product-reviews{
+    text-align: justify;
+    padding-right: 50%;
+}
+
+
+/* Footer */
+#footer {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.footer_txt {
+
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #888888;
+}
